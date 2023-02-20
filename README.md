@@ -1,5 +1,5 @@
 # qbit-magnet-uploader
-Node express api to upload magnet urls to qbit torrent.
+Node express api to upload magnet urls to qbit torrent. Just post a message to `https://url/submitMagnet`
 
 Create a `local.settings.js` file in the same directory with the following settings:
 
@@ -22,3 +22,6 @@ const settings = {
 
 export default settings;
 ```
+
+# Magnetize bookmarklet
+You can use the js inside the magnetBookmark.js file as a bookmark toolbar button in your browser. It will find any `<a>` tag on the current page whose `href` contains `magnet:` and set an onClick event that will send the request to this express api. You just need to change `https://192.168.1.128:89/submitMagnet` to your own hosted URL.
