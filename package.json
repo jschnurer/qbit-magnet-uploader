@@ -1,0 +1,23 @@
+{
+  "name": "qbit-torrent-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ctrl/qbittorrent": "^5.2.0",
+    "@types/node-fetch": "^2.6.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.9",
+    "qbittorrent-api-v2": "^1.2.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
